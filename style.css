@@ -1,0 +1,360 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    transition: all .5s ease;
+}
+
+:root {
+    --background: #24243c;
+    --background-item: #363650;
+    --colo-custom: #b33434;
+    --text-color: #939393;
+    --background-hover: #474766fd;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/* ===========Section Header========== */
+
+header {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header .logo {
+    font-size: 50px;
+    color: var(--colo-custom);
+}
+
+header .list-link ul {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    color: #ffffff;
+}
+
+header .list-link ul li {
+    margin: 0 5px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header .list-link ul li a {
+    display: inline-block;
+    padding: 10px 25px;
+    color: var(--text-color);
+}
+
+header .list-link ul .home,
+header .list-link ul .home a {
+    background-color: var(--colo-custom);
+    color: #ffffff;
+}
+
+header .list-link ul .home {
+    border-bottom: solid 2px #ffffff;
+}
+
+header .logout-secstion button {
+    background-color: var(--background-item);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+header .logout-secstion button:hover,
+header .list-link ul li:hover {
+    background-color: var(--background-hover);
+}
+
+/* ===========End Header========== */
+
+/* ===========Section Wellcome========== */
+
+.wellcome {
+    width: 100%;
+    margin: 100px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+
+}
+
+.wellcome h1 {
+    width: 70%;
+    font-size: 6vw;
+    word-break: keep-all;
+    color: var(--colo-custom);
+    font-weight: 900;
+}
+
+.wellcome h1::after {
+    content: ",Wellcome to My Website";
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* ===========End Wellcome========== */
+/* ===========Section WhoWe========== */
+
+section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+section>h2,
+section>span {
+    margin-bottom: 15px;
+}
+
+section>h2 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+section>span {
+    color: var(--text-color);
+}
+
+.whowe .box-card {
+    width: 80%;
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+}
+
+.whowe .box-card .card {
+    width: 100%;
+    display: flex;
+    box-shadow: 5px 5px 10px 0 #000000;
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 15px;
+    background-color: var(--background-item);
+}
+
+.whowe .box-card .card img {
+    flex: 50%;
+    width: 0%;
+}
+
+.whowe .box-card .card .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    flex-flow: column;
+    flex-shrink: 0;
+    flex: 50%;
+    width: 100%;
+    padding: 30px;
+
+}
+
+.whowe .box-card .card .info i {
+    color: var(--colo-custom);
+    font-size: 30px;
+}
+
+.whowe .box-card .card .info h3 {
+    color: #ffffff;
+}
+
+.whowe .box-card .card .info p,
+.whowe .box-card .card .info span {
+    color: #85858e;
+    font-size: 15px;
+}
+
+.whowe .box-card .card .info p .Goto-Dis {
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 70px 16px 49px 12px / 40px 52px 76px 12px;
+    background-image: linear-gradient(45deg, var(--colo-custom), transparent);
+}
+
+/* ===========End WhoWe========== */
+
+/* ===========End Section2========== */
+.about .box-card2 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.about .box-card2 .card2 {
+    color: #ffffff;
+    background-color: var(--background-item);
+    padding: 25px 30px;
+    margin: 12px;
+    width: 320px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #000000;
+    display: flex;
+    align-items: end;
+    flex-flow: column;
+}
+
+.about .box-card2 .card2 i {
+    color: var(--colo-custom);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about .box-card2 .card2 h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+
+}
+
+.about .box-card2 .card2 p {
+    color: var(--text-color);
+}
+
+/* ===========End Section2========== */
+/* ===========Section Footer========== */
+
+footer {
+    background-color: var(--background-item);
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+footer h1 {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 0.1px var(--text-color) solid;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer .soc {
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse;
+    min-width: 100px;
+    margin-bottom: 20px;
+}
+
+footer .soc a {
+    margin: 0 10px;
+}
+
+footer .soc a i {
+    color: var(--text-color);
+    font-size: 30px;
+    padding: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+footer .soc a i:hover {
+    padding: 10px 20px;
+    background-color: var(--background-hover);
+}
+
+/* ===========End Footer========== */
+
+/* ===========IP Section========== */
+section .box-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: wrap;
+    margin-bottom: 80px;
+}
+
+section .box-card .ip {
+    background-color: var(--background-item);
+    padding: 10px 25px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #000000;
+    width: 280px;
+    margin: 15px;
+    min-height: 130px;
+    font-size: 20px;
+}
+
+section .box-card .ip h2 {
+    color: #85858e;
+    margin-bottom: 12px;
+}
+
+section .box-card .ip p {
+    color: var(--colo-custom);
+    text-shadow: 2px 2px 6px #000000;
+}
+
+section .box-card .ip p::before {
+    content: "ip: ";
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+section .box-card .ip p span::before {
+    content: "port: ";
+    text-transform: uppercase;
+    color: var(--text-color);
+
+}
+
+/* ===========End IP========== */
+
+section .box-card .card:hover,
+section .box-card .ip:hover,
+section .box-card2 .card2:hover {
+    background-color: var(--background-hover);
+    transform: scale(1.07);
+}
+
+
+/* ===========End Med========== */
+@media(max-width:550px){
+    header{
+        flex-flow: column;
+    }
+    header .list-link{
+        width: 60%;
+        padding: 0 20px;
+    }
+    header .list-link ul{
+        flex-flow: column;
+        margin: 30px 0;
+    }
+    header .list-link ul li{
+        margin: 5px 0;
+    }
+    header .list-link ul li a{
+        text-align: center;
+        width: 100%;
+    }
+
+}
