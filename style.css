@@ -12,7 +12,8 @@
 :root {
     --background: #24243c;
     --background-item: #363650;
-    --colo-custom: #b33434;
+/*    Red --colo-custom: #b33434;*/
+    --colo-custom: #43a047;
     --text-color: #939393;
     --background-hover: #474766fd;
 }
