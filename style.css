@@ -12,7 +12,7 @@
 :root {
     --background: #24243c;
     --background-item: #363650;
-/*    Red --colo-custom: #b33434;*/
+    /* --colo-custom: #b33434; */
     --colo-custom: #43a047;
     --text-color: #939393;
     --background-hover: #474766fd;
@@ -133,14 +133,15 @@ section>span {
 
 .whowe .box-card {
     width: 80%;
-    margin: 60px 0;
+    /* margin: 60px 0; */
     display: flex;
     justify-content: space-evenly;
     flex-flow: column;
 }
 
 .whowe .box-card .card {
-    width: 100%;
+    width: 80%;
+    max-height: 300px;
     display: flex;
     box-shadow: 5px 5px 10px 0 #000000;
     overflow: hidden;
@@ -173,12 +174,14 @@ section>span {
 
 .whowe .box-card .card .info h3 {
     color: #ffffff;
+    font-size: 25px;
+    margin: 20px 0;
 }
 
 .whowe .box-card .card .info p,
 .whowe .box-card .card .info span {
     color: #85858e;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .whowe .box-card .card .info p .Goto-Dis {
@@ -338,24 +341,32 @@ section .box-card2 .card2:hover {
 
 
 /* ===========End Med========== */
-@media(max-width:550px){
-    header{
+@media(max-width:550px) {
+    header {
         flex-flow: column;
     }
-    header .list-link{
+
+    header .list-link {
         width: 60%;
         padding: 0 20px;
     }
-    header .list-link ul{
+
+    header .list-link ul {
         flex-flow: column;
         margin: 30px 0;
     }
-    header .list-link ul li{
+
+    header .list-link ul li {
         margin: 5px 0;
     }
-    header .list-link ul li a{
+
+    header .list-link ul li a {
         text-align: center;
         width: 100%;
+    }
+
+    .whowe .box-card .card img {
+        display: none;
     }
 
 }
