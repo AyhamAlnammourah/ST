@@ -1,0 +1,13 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: 200px 0;
+
+}
+
+main h1 {
+    text-align: center;
+    color: var(--colo-custom);
+    font-size: 60px;
+}
