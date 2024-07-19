@@ -341,7 +341,7 @@ section .box-card2 .card2:hover {
 
 
 /* ===========End Med========== */
-@media(max-width:550px) {
+@media(max-width:580px) {
     header {
         flex-flow: column;
     }
